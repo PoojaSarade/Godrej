@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73badbdd.css",
+    "main.js": "/static/js/main.6336cb19.js",
+    "static/js/453.8a502395.chunk.js": "/static/js/453.8a502395.chunk.js",
+    "static/media/amenities1.jpg": "/static/media/amenities1.8c7edb7df49e83c2596b.jpg",
+    "static/media/Home.jpg": "/static/media/Home.08864ab76aed98a83df1.jpg",
+    "static/media/Gallery1.jpg": "/static/media/Gallery1.a48e6a6e233efbe5c063.jpg",
+    "static/media/Gallery3.jpg": "/static/media/Gallery3.7c639b067c0bddb15420.jpg",
+    "static/media/Gallery2.jpg": "/static/media/Gallery2.56d51a8819f1e2cb984b.jpg",
+    "static/media/Overview.jpg": "/static/media/Overview.da4b14658e924672b55a.jpg",
+    "static/media/masterplan.jpg": "/static/media/masterplan.97ba85030bb2a079dd85.jpg",
+    "static/media/playstore.png": "/static/media/playstore.88c0cf672ae4dd873d7f.png",
+    "static/media/popupform.jpg": "/static/media/popupform.ca4b9fb8ee5b9cd42934.jpg",
+    "static/media/green-cover.jpg": "/static/media/green-cover.bc7172e5ff6ff2a94434.jpg",
+    "static/media/fitness.jpg": "/static/media/fitness.cb4899cc897e9249a825.jpg",
+    "static/media/Appstore.png": "/static/media/Appstore.2a8f2a38110b76832fb2.png",
+    "static/media/entertainment.jpg": "/static/media/entertainment.5115366dbdf4323095b9.jpg",
+    "static/media/vr-gaming.jpg": "/static/media/vr-gaming.3526f6e8d7d54997be72.jpg",
+    "static/media/floorplan4.jpg": "/static/media/floorplan4.740c4f149c1058c6b997.jpg",
+    "static/media/floorplan5.jpg": "/static/media/floorplan5.f8e50c7dc37ffa7eb594.jpg",
+    "static/media/floorplan3.jpg": "/static/media/floorplan3.d33da8d265f774630cf4.jpg",
+    "static/media/floorplan1.webp": "/static/media/floorplan1.c8ea1d27060eae7a6382.webp",
+    "static/media/floorplan6.jpg": "/static/media/floorplan6.c8ea1d27060eae7a6382.jpg",
+    "static/media/floorplan2.jpg": "/static/media/floorplan2.064e40825445f5f515f7.jpg",
+    "static/media/instagram.svg": "/static/media/instagram.5e412550d7eda45be422.svg",
+    "static/media/youtube.svg": "/static/media/youtube.2d25b5557db1a1824711.svg",
+    "static/media/facebook.svg": "/static/media/facebook.95728f8f306ef79ecfe8.svg",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.7d2220de06571bffcc7a.svg",
+    "main.73badbdd.css.map": "/static/css/main.73badbdd.css.map",
+    "main.6336cb19.js.map": "/static/js/main.6336cb19.js.map",
+    "453.8a502395.chunk.js.map": "/static/js/453.8a502395.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73badbdd.css",
+    "static/js/main.6336cb19.js"
+  ]
+}
