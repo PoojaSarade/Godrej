@@ -1,17 +1,136 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><script defer="defer" src="/static/js/main.6336cb19.js"></script><link href="/static/css/main.73badbdd.css" rel="stylesheet"></head><body>
-    <noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div>
-<!-- <form action="https://formsubmit.co/knightsfinestatesofficial@gmail.com" method="POST" style="margin: 30px; padding: 20px; border: 1px solid #ccc;">
-  <h3>Contact Form</h3>
-  <label for="name">Name:</label><br />
-  <input type="text" id="name" name="name" required /><br /><br />
-
-  <label for="email">Email:</label><br />
-  <input type="email" id="email" name="email" required /><br /><br />
-
-  <label for="message">Message:</label><br />
-  <textarea id="message" name="message" rows="4" required></textarea><br /><br />
-<input type="hidden" name="_subject" value="New Form Submission from Landing Page">
-    <input type="hidden" name="_captcha" value="false">
-  <button type="submit">Submit</button>
-</form> -->
-</body></html>
+<!-- <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="/logo192.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <title>React App</title>
+    <script defer="defer" src="/static/js/main.6336cb19.js"></script>
+    <link href="/static/css/main.73badbdd.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    Script to monitor form submissions -->
+    <!-- <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Page loaded, checking for forms...'); -->
+<!--         
+        // Wait for React to load
+        // setTimeout(function() {
+        //     const forms = document.querySelectorAll('form');
+        //     console.log('Found', forms.length, 'forms on page');
+            
+        //     forms.forEach(function(form, index) {
+        //         console.log('Form', index, 'action:', form.action);
+                
+        //         // Add submit event listener to track submissions
+        //         form.addEventListener('submit', function(e) {
+        //             console.log('Form submitted!');
+        //             console.log('Form action:', form.action);
+        //             console.log('Form method:', form.method); -->
+<!--                     
+                    // Let the form submit normally
+//                     return true;
+//                 });
+//             });
+//         }, 3000); // Wait 3 seconds for React to fully load
+//     }); -->
+<!-- //     </script>
+// </body>
+// </html> -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Web site created using create-react-app"/>
+    <link rel="apple-touch-icon" href="/logo192.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <title>React App</title>
+    <script defer="defer" src="/static/js/main.6336cb19.js"></script>
+    <link href="/static/css/main.73badbdd.css" rel="stylesheet">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Script to fix popup form -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Page loaded, fixing popup form...');
+        
+        // Function to fix popup form
+        function fixPopupForm() {
+            const forms = document.querySelectorAll('form');
+            
+            forms.forEach(function(form, index) {
+                console.log('Checking form', index, 'action:', form.action);
+                
+                // If form has no action (popup form)
+                if (!form.action || form.action === window.location.href) {
+                    console.log('Found popup form without action, fixing...');
+                    
+                    // Add FormSubmit action
+                    form.action = 'https://formsubmit.co/knightsfinestatesofficial@gmail.com';
+                    form.method = 'POST';
+                    
+                    // Add hidden fields for FormSubmit
+                    const hiddenFields = [
+                        { name: '_captcha', value: 'false' },
+                        { name: '_subject', value: 'Popup Form - Property Inquiry' },
+                        { name: '_template', value: 'table' }
+                    ];
+                    
+                    hiddenFields.forEach(function(field) {
+                        const hiddenInput = document.createElement('input');
+                        hiddenInput.type = 'hidden';
+                        hiddenInput.name = field.name;
+                        hiddenInput.value = field.value;
+                        form.appendChild(hiddenInput);
+                    });
+                    
+                    // Add name attributes to inputs
+                    const inputs = form.querySelectorAll('input, textarea');
+                    inputs.forEach(function(input, i) {
+                        if (!input.name && input.type !== 'hidden') {
+                            if (input.placeholder.toLowerCase().includes('name')) {
+                                input.name = 'name';
+                            } else if (input.placeholder.toLowerCase().includes('email')) {
+                                input.name = 'email';
+                            } else if (input.placeholder.toLowerCase().includes('phone')) {
+                                input.name = 'phone';
+                            } else if (input.tagName === 'TEXTAREA') {
+                                input.name = 'message';
+                            }
+                        }
+                    });
+                    
+                    console.log('Popup form fixed!');
+                }
+            });
+        }
+        
+        // Fix forms immediately
+        fixPopupForm();
+        
+        // Also fix forms that load later (popup)
+        setTimeout(fixPopupForm, 2000);
+        setTimeout(fixPopupForm, 5000);
+        
+        // Watch for new forms being added
+        const observer = new MutationObserver(function() {
+            fixPopupForm();
+        });
+        observer.observe(document.body, { childList: true, subtree: true });
+    });
+    </script>
+</body>
+</html>

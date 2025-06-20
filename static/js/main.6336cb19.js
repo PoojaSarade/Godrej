@@ -10166,10 +10166,15 @@
                             className: b,
                             children: [(0, x.jsx)("input", {
                                 type: "text",
+                                id: "name",
+                                name:"name",
                                 placeholder: "Name",
                                 required: !0
-                            }), (0, x.jsx)("input", {
+                            }),
+                            (0, x.jsx)("input", {
                                 type: "email",
+                                id:"email",
+                                name:"email",
                                 placeholder: "Email Id",
                                 required: !0
                             })]
@@ -10177,12 +10182,16 @@
                             className: b,
                             children: (0, x.jsx)("input", {
                                 type: "tel",
+                                id:"phone",
+                                name:"phone",
                                 placeholder: "Phone",
                                 required: !0
                             })
                         }), (0, x.jsx)("div", {
                             className: b,
                             children: (0, x.jsx)("textarea", {
+                                id:"message",
+                                name:"message",
                                 placeholder: "Your Message",
                                 rows: "3",
                                 required: !0
@@ -11437,7 +11446,7 @@ Zt = () => {
                     children: "Let's get in touch."
                 }),
                 (0, x.jsxs)("form", {
-                    action: "https://formsubmit.co/your-test-email@gmail.com",
+                    action: "https://formsubmit.co/knightsfinestatesofficial@gmail.com",
                     method: "POST",
                     className: Ut,
                     children: [(0, x.jsxs)("div", {
@@ -11513,31 +11522,27 @@ Zt = () => {
                     }),
                     (0, x.jsx)("input", {
                         type: "hidden",
-                        name: "_next",
-                        value: "https://yourdomain.com/thank-you"
-                    }),
-                    (0, x.jsx)("input", {
-                        type: "hidden",
                         name: "_template",
                         value: "table"
                     }),
-                    (0, x.jsxs)("div", {
-                        className: Yt,
-                        children: ["This site is protected by reCAPTCHA and the Google", (0, x.jsx)("a", {
-                            href: "https://policies.google.com/privacy",
-                            className: Xt,
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            children: " Privacy Policy"
-                        }), " and", (0, x.jsx)("a", {
-                            href: "https://policies.google.com/terms",
-                            className: Xt,
-                            target: "_blank",
-                            rel: "noopener noreferrer",
-                            children: " Terms of Service"
-                        }), " apply."
-                        ]
-                    }), (0, x.jsx)("button", {
+                    // (0, x.jsxs)("div", {
+                    //     className: Yt,
+                    //     children: ["This site is protected by reCAPTCHA and the Google", (0, x.jsx)("a", {
+                    //         href: "https://policies.google.com/privacy",
+                    //         className: Xt,
+                    //         target: "_blank",
+                    //         rel: "noopener noreferrer",
+                    //         children: " Privacy Policy"
+                    //     }), " and", (0, x.jsx)("a", {
+                    //         href: "https://policies.google.com/terms",
+                    //         className: Xt,
+                    //         target: "_blank",
+                    //         rel: "noopener noreferrer",
+                    //         children: " Terms of Service"
+                    //     }), " apply."
+                    //     ]
+                    // }), 
+                    (0, x.jsx)("button", {
                         type: "submit",
                         className: Jt,
                         children: "SEND MESSAGE →"
